@@ -108,7 +108,7 @@
      *@return    Integer                  Total number of host
     */
     public function getAvailableHost($cidr){
-        $totalHost = pow((30-$cidr), 2);               // Calculate total hosts into the given CIDR value
+        $totalHost = pow(2, (32-$cidr));               // Calculate total hosts into the given CIDR value
         return $totalHost;                             // Return the final output
     }
 
